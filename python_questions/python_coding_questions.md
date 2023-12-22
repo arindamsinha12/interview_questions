@@ -52,7 +52,7 @@ else:
 ```
 
 #### Q2)
-Charles and Peter are play rock-paper-scissors.
+Charles and Peter are playing rock-paper-scissors.
 - Rock beats scissors
 - Scissors beats paper
 - Paper beats rock
@@ -142,4 +142,18 @@ def get_value(path_list, emp_dict):
         return get_value(path_list[1:], emp_dict[path_list[0]])
 
 print(get_value(path_list, emp_dict))
+```
+
+#### Q4)
+
+Insert the first string in the middle of the second string.
+
+first_string = "Something"
+second_string = "great"
+
+```
+first_string = "Something"
+second_string = "great"
+
+print(first_string[:len(first_string) // 2] + second_string + first_string[len(first_string):])
 ```
