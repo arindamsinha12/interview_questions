@@ -64,6 +64,7 @@ Charles = "Rock"
 Peter = "Paper"
 
 **Solution:**
+
 This can be done using a longish if...else, but using a dictionary is a more elegant solution.
 
 ```
