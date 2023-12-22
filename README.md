@@ -1,2 +1,2 @@
-# interview_questions
+# Interview Questions
 Sample Python and SQL interview questions
