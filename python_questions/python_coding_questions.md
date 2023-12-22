@@ -125,7 +125,9 @@ print(emp_dict)
 
 ```
 emp_dict = {'emp1': {'first_name': 'Robert', 'last_name': 'Long'},
+
             'emp2': {'first_name': 'Alice', 'last_name': 'Smith'},
+
             'emp3': {'first_name': 'Chen', 'last_name': 'Yung'}}
 
 path = 'emp2.last_name'
