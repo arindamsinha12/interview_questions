@@ -2,7 +2,7 @@
 
 I have put together a set of Python coding questions that are typically asked in interviews, drawing on my experience as both interviewer and interviewee. Some of these are questions I have been asked in actual interviews, some are questions from all over the web and I have provided my answers to them irrespective of whether it is the same as the source or not, and some I have simply thought up possible questions in an interview.
 
-I have also create a set of interview tips and tricks for coding interviews, which will help avoid typical behavioral mistakes that candidates often make. [trade_transactions.csv](https://github.com/arindamsinha12/scripts/tree/main/data)
+I have also create a set of [Coding interview Tips](https://github.com/arindamsinha12/interview_questions/blob/main/README.md) for coding interviews, which will help avoid typical behavioral mistakes that candidates often make.
 
 My strong suggestion is that anyone using this should try to solve the questions first before looking at the answers in an imaginary interview setting. Give yourself 10 minutes to solve each question.
 
@@ -155,5 +155,79 @@ second_string = "great"
 first_string = "Something"
 second_string = "great"
 
-print(first_string[:len(first_string) // 2] + second_string + first_string[len(first_string):])
+print(first_string[:len(first_string) // 2] + second_string + first_string[len(first_string) // 2:])
+```
+
+### Q5)
+
+Find (a) all words that are in common to both sentences and, (b) all words that are not in common between both sentences.
+sent1 = "This is a test string for finding commonality"
+sent2 = "This string is the one for finding the answers"
+
+```
+sent1 = "This is a test string for finding commonality"
+sent2 = "This string is the one for finding the answers"
+
+sent1_set = set(sent1.split())
+sent2_set = set(sent2.split())
+print("Words in common - " + ", ".join(sent1_set & sent2_set))
+print("Words not in common - " + ", ".join(sent1_set ^ sent2_set))
+```
+
+Note: Set operations - For two sets **seta** and **setb**:
+Difference: seta - setb
+Union: seta | set b
+Intersection: seta & setb
+Symmetric Difference: seta ^ setb
+
+### Q6)
+
+Find the most frequent character and it's count of occurences in the string "abracadabra".
+
+```
+strg = "abracadabra"
+print(max({i:strg.count(i) for i in strg}.items(), key=lambda i:i[1]))
+```
+
+### Q7)
+
+Find the string containing all unique characters in the string "abracadabra", in the order that it first occurs in the string.
+
+```
+input_string = 'abracadabra'
+print("".join(sorted(set(input_string), key=input_string.index)))
+```
+
+### Q8)
+
+Sort the dictionary (a) in the order of keys, (b) in the order of values and, (c) in the order of length of their keys.
+dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
+
+```
+dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
+
+print("By key:", dict(sorted(dict1.items())))
+print("By value:", dict(sorted(dict1.items(), key=lambda i: i[1])))
+print("By key length:", dict(sorted(dict1.items(), key=lambda i: len(i[0]))))
+```
+
+### Q8)
+
+Count the number of occurences of each word in the sentence "This is a test of a string to test a word count".
+
+```
+words = "This is a test of a string test a word count".split()
+word_count = {i:words.count(i) for i in words}
+print(word_count)
+```
+
+### Q9)
+
+Find the maximum value in a list in (a) ASCII order and (b) word length.
+words = \['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
+
+```
+words = ['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
+print("ASCII order:", max(words))
+print("By length:", max(words, key=len))
 ```
