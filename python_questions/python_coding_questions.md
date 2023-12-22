@@ -97,9 +97,11 @@ else:
 #### Q3)
 You are given a nested dictionary.
 
+```
 emp_dict = {'emp1': {'first_name': 'Robert', 'last_name': 'Long'},
             'emp2': {'first_name': 'Alice', 'last_name': 'Smith'},
             'emp3': {'first_name': 'Chen', 'last_name': 'Yung'}}
+```
 
 Given a dot separated path, get the corresponding value from the dictionary.
 
