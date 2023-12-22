@@ -6,7 +6,7 @@ I have also create a set of interview tips and tricks for coding interviews, whi
 
 My strong suggestion is that anyone using this should try to solve the questions first before looking at the answers in an imaginary interview setting. Give yourself 10 minutes to solve each question.
 
-### 1. Given a number such as 7345437, determine if it is a palindrome or not in two ways (a) by converting it to string, (b) without converting it to string.
+##### 1. Given a number such as 7345437, determine if it is a palindrome or not in two ways (a) by converting it to string, (b) without converting it to string.
 
 **Converting it to string:**
 
