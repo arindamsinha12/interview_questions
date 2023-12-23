@@ -1,6 +1,6 @@
 # Coding Interview Tips
 
-As and interviewer and interviewee I have noticed candidates having preconceived notions about what is expected of them in coding interviews. This article provides some tips on how to best manage a coding interview.
+As an interviewer and interviewee I have noticed candidates having preconceived notions about what is expected of them in coding interviews. This article provides some tips on how to best manage a coding interview.
 
 Many, if not most candidates get under time pressure when the coding exercises are given, throughout the interview, and espceially at the end of the interview with few minutes left. There is also a perception that the interviewee should start writing code immediately after reading the question, or else they will be considered to be slow. Taking a break to think of the solution may lead to an awkward silence which might give the interviewer uncertainly about what the interviewee is doing. If there is a question given with perhaps 2-3 minutes to go to the end of the interview slot, there is a pressure to solve it within that limited time. Another perception many have is that asking the interviewer for help on a small thing shows lack of knowledge. These are largely misconcetions, and usually these lead to the interiewee start writing code with the first idea that strikes them, and never really taking time to think.
 
