@@ -231,3 +231,74 @@ words = ['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'c
 print("ASCII order:", max(words))
 print("By length:", max(words, key=len))
 ```
+
+### Q10)
+
+Find the maximum value of in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.
+dict1 = {'one': 'fifteen', 'two': 'sixteen', 'five': 'eleven', 'three': 'twelve', 'four': 'thirteen'}
+
+```
+Max by key:
+print(max(dict1.items()))
+
+Max by value length:
+print(max(dict1.items(), key=lambda x: len(x[1])))
+
+Max by value:
+print(max(dict1.items(), key=lambda x: x[1]))
+```
+
+### Q11)
+
+Find the common characters between two strings 'broad' and 'abracadabra' in (a) any order, and (b) in the order in which they first appear in 'abracadabra'
+
+```
+In any order:
+"".join(set('broad') & set('abracadabra'))
+```
+
+### Q12)
+
+Find the count of characters in string 'abracadabra' as a list of tuple(char, count), with characters in decreasing order of frequency.
+
+```
+input_string = 'abracadabra'
+char_count = {i:list(input_string).count(i) for i in input_string}
+print(sorted(char_count.items(), key=lambda x: x[1], reverse=True))
+```
+
+### Q12)
+
+Find longest common prefix in a list of strings.
+Example strings:
+input_list = \['manage', 'mango', 'man', 'manifest']
+input_list = \['manage', 'mango', 'many', 'manifest']
+
+```
+common_prefix = ''
+min_len = len(min(input_list, key=len))
+for i in range(min_len):
+    prefix_set = set(map(lambda x: x[:i+1], input_list))
+    if len(prefix_set) == 1:
+        common_prefix = prefix_set.pop()
+    else:
+        break
+		
+print(common_prefix)
+```
+
+### Q13)
+
+List of all combinations of 0..x, 0..y, 0..z where the sum of the components of any combination (x, y, z) does not add up to 4.
+x = 2
+x = 3
+x = 4
+n = 4
+
+```
+x = 2
+y = 3
+z = 4
+n = 4
+[[a, b, c] for a in range(x + 1) for b in range(y + 1) for c in range(z + 1) if a+b+c != n]
+```
