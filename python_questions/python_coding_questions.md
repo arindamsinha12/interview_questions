@@ -216,7 +216,7 @@ print(word_count)
 
 ### Q9)
 
-Find the maximum value in a list in (a) ASCII order and (b) word length.  
+Find the maximum value in a list in (a) aplhabetical order and (b) word length.  
 words = \['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
 
 ```
@@ -292,4 +292,16 @@ y = 3
 z = 4
 n = 4
 [[a, b, c] for a in range(x + 1) for b in range(y + 1) for c in range(z + 1) if a+b+c != n]
+```
+
+### Q14)
+
+From the list of list of students and their grades, print the names of students with the second lowest grade.  
+records = \[\['jane', 27.1], \['barry', 30], \['hogan', 30.8], \['sara', 30], \['larry', 31]]
+
+```
+records = [['jane', 27.1], ['barry', 30], ['hogan', 30.8], ['sara', 30], ['larry', 31]]
+second_lowest = sorted(set([x[1] for x in records]))[1]
+students = sorted([g[0] for g in records if g[1] == second_lowest])
+prt = [print(name) for name in students]
 ```
