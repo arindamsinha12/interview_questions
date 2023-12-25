@@ -201,6 +201,7 @@ print("".join(sorted(set(input_string), key=input_string.index)))
 ### Q8)
 
 Sort the dictionary (a) in the order of keys, (b) in the order of values and, (c) in the order of length of their keys.
+
 dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
 
 ```
@@ -224,6 +225,7 @@ print(word_count)
 ### Q9)
 
 Find the maximum value in a list in (a) ASCII order and (b) word length.
+
 words = \['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
 
 ```
@@ -235,6 +237,7 @@ print("By length:", max(words, key=len))
 ### Q10)
 
 Find the maximum value of in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.
+
 dict1 = {'one': 'fifteen', 'two': 'sixteen', 'five': 'eleven', 'three': 'twelve', 'four': 'thirteen'}
 
 ```
@@ -270,8 +273,11 @@ print(sorted(char_count.items(), key=lambda x: x[1], reverse=True))
 ### Q12)
 
 Find longest common prefix in a list of strings.
+
 Example strings:
+
 input_list = \['manage', 'mango', 'man', 'manifest']
+
 input_list = \['manage', 'mango', 'many', 'manifest']
 
 ```
@@ -290,9 +296,9 @@ print(common_prefix)
 ### Q13)
 
 List of all combinations of 0..x, 0..y, 0..z where the sum of the components of any combination (x, y, z) does not add up to 4.
-x = 2
-x = 3
-x = 4
+
+x = 2, y = 3, z = 4
+
 n = 4
 
 ```
