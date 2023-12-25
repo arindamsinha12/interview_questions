@@ -52,7 +52,7 @@ else:
 ```
 
 #### Q2)
-Charles and Peter are playing rock-paper-scissors.
+Charles and Peter are playing rock-paper-scissors.  
 - Rock beats scissors
 - Scissors beats paper
 - Paper beats rock
