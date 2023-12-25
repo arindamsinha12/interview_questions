@@ -295,10 +295,8 @@ print(common_prefix)
 
 ### Q13)
 
-List of all combinations of 0..x, 0..y, 0..z where the sum of the components of any combination (x, y, z) does not add up to 4.
-
-x = 2, y = 3, z = 4
-
+List of all combinations of 0..x, 0..y, 0..z where the sum of the components of any combination (x, y, z) does not add up to 4.  
+x = 2, y = 3, z = 4  
 n = 4
 
 ```
