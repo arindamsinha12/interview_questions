@@ -57,10 +57,9 @@ Charles and Peter are playing rock-paper-scissors.
 - Scissors beats paper
 - Paper beats rock
 
-If they both pick the same, it is a draw.
-
-Write a function to determine the winner starting with the below code snippet:
-Charles = "Rock"
+If they both pick the same, it is a draw.  
+Write a function to determine the winner starting with the below code snippet:  
+Charles = "Rock"  
 Peter = "Paper"
 
 **Solution:**
