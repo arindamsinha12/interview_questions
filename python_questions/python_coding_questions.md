@@ -95,16 +95,12 @@ else:
 ```
 
 #### Q3)
-You are given a nested dictionary.
-
-```
-emp_dict = {'emp1': {'first_name': 'Robert', 'last_name': 'Long'},
-            'emp2': {'first_name': 'Alice', 'last_name': 'Smith'},
+You are given a nested dictionary.  
+emp_dict = {'emp1': {'first_name': 'Robert', 'last_name': 'Long'},  
+            'emp2': {'first_name': 'Alice', 'last_name': 'Smith'},  
             'emp3': {'first_name': 'Chen', 'last_name': 'Yung'}}
-```
 
-Given a dot separated path, get the corresponding value from the dictionary.
-
+Given a dot separated path, get the corresponding value from the dictionary.  
 path = 'emp2.last_name'
 
 **Iterative Solution:**
@@ -146,9 +142,8 @@ print(get_value(path_list, emp_dict))
 
 #### Q4)
 
-Insert the first string in the middle of the second string.
-
-first_string = "Something"
+Insert the first string in the middle of the second string.  
+first_string = "Something"  
 second_string = "great"
 
 ```
@@ -160,8 +155,8 @@ print(first_string[:len(first_string) // 2] + second_string + first_string[len(f
 
 ### Q5)
 
-Find (a) all words that are in common to both sentences and, (b) all words that are not in common between both sentences.
-sent1 = "This is a test string for finding commonality"
+Find (a) all words that are in common to both sentences and, (b) all words that are not in common between both sentences.  
+sent1 = "This is a test string for finding commonality"  
 sent2 = "This string is the one for finding the answers"
 
 ```
@@ -174,10 +169,10 @@ print("Words in common - " + ", ".join(sent1_set & sent2_set))
 print("Words not in common - " + ", ".join(sent1_set ^ sent2_set))
 ```
 
-Note: Set operations - For two sets **seta** and **setb**:
-Difference: seta - setb
-Union: seta | set b
-Intersection: seta & setb
+Note: Set operations - For two sets **seta** and **setb**:  
+Difference: seta - setb  
+Union: seta | set b  
+Intersection: seta & setb  
 Symmetric Difference: seta ^ setb
 
 ### Q6)
@@ -200,8 +195,7 @@ print("".join(sorted(set(input_string), key=input_string.index)))
 
 ### Q8)
 
-Sort the dictionary (a) in the order of keys, (b) in the order of values and, (c) in the order of length of their keys.
-
+Sort the dictionary (a) in the order of keys, (b) in the order of values and, (c) in the order of length of their keys.  
 dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
 
 ```
@@ -224,8 +218,7 @@ print(word_count)
 
 ### Q9)
 
-Find the maximum value in a list in (a) ASCII order and (b) word length.
-
+Find the maximum value in a list in (a) ASCII order and (b) word length.  
 words = \['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
 
 ```
@@ -236,8 +229,7 @@ print("By length:", max(words, key=len))
 
 ### Q10)
 
-Find the maximum value of in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.
-
+Find the maximum value of in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.  
 dict1 = {'one': 'fifteen', 'two': 'sixteen', 'five': 'eleven', 'three': 'twelve', 'four': 'thirteen'}
 
 ```
@@ -253,7 +245,7 @@ print(max(dict1.items(), key=lambda x: x[1]))
 
 ### Q11)
 
-Find the common characters between two strings 'broad' and 'abracadabra' in (a) any order, and (b) in the order in which they first appear in 'abracadabra'
+Find the common characters between two strings 'broad' and 'abracadabra' in (a) any order, and (b) in the order in which they first appear in 'abracadabra'.
 
 ```
 In any order:
@@ -272,12 +264,9 @@ print(sorted(char_count.items(), key=lambda x: x[1], reverse=True))
 
 ### Q12)
 
-Find longest common prefix in a list of strings.
-
-Example strings:
-
-input_list = \['manage', 'mango', 'man', 'manifest']
-
+Find longest common prefix in a list of strings.  
+Example strings:  
+input_list = \['manage', 'mango', 'man', 'manifest']  
 input_list = \['manage', 'mango', 'many', 'manifest']
 
 ```
