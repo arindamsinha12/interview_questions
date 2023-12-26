@@ -13,30 +13,20 @@ A teacher wants to shuffle their students in such a way, that each student in an
 Table **students**:  
 |Position|Name|  
 +-------------+  
-|1| Alice          |  
-+----------+----------------+  
-|      2   | Ramesh         |  
-+----------+----------------+  
-|      3   | Chan           |  
-+----------+----------------+  
-|      4   | John           |  
-+----------+----------------+  
-|      5   | Rita           |  
-+----------+----------------+
+|1|Alice|  
+|2|Ramesh|  
+|3|Chan|  
+|4|John|  
+|5|Rita|  
 
 Result required:  
 |Position|Name|  
 +-------------+  
-|      1   | Ramesh         |  
-+----------+----------------+  
-|      2   | Alice          |  
-+----------+----------------+  
-|      3   | John           |  
-+----------+----------------+  
-|      4   | Chan           |  
-+----------+----------------+  
-|      5   | Rita           |  
-+----------+----------------+
+|1|Ramesh|  
+|2|Alice|  
+|3|John|  
+|4|Chan|  
+|5|Rita|  
 
 ```
 SELECT CASE WHEN position = (SELECT MAX(position) FROM students) AND position % 2 = 1 THEN position
