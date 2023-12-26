@@ -49,7 +49,7 @@ The output should be a single list with following columns:
 **Tables:**  
 ***Customer***  
 |customer_id|customer_name|  
-+-----------+----------------+  
++------------+----------------+  
 |101|Robert|  
 |102|James|  
 |103|Amy|  
