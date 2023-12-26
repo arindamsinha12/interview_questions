@@ -100,4 +100,4 @@ WHERE category in (SELECT pr.category
 GROUP BY category;
 ```
 
-*Note: This is one of those slightly tricky questions as I mention in [Coding interview Tips](https://github.com/arindamsinha12/interview_questions/blob/main/coding_interview_tips.md). You do not need the ***Customer*** table at all, nor do you need to output any columns from ***Product_Sales****
+*Note: This is one of those slightly tricky questions as I mention in [Coding interview Tips](https://github.com/arindamsinha12/interview_questions/blob/main/coding_interview_tips.md). You do not need the ***Customer*** table at all, nor do you need to output any columns from ***Product_Sales***. This tests the ability to quickly eliminate extraneous information.*
