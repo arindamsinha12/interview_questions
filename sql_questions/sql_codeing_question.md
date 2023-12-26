@@ -49,6 +49,7 @@ The output should be a single list with following columns:
 **Tables:**  
 ***Customer***  
 |customer_id|customer_name|  
++-----------+-------------+  
 |101|Robert|  
 |102|James|  
 |103|Amy|  
@@ -57,6 +58,7 @@ The output should be a single list with following columns:
 
 ***Products***  
 |product_id|product_name|category|price|  
++----------+------------+--------+-----+  
 |1|Box|Packaging|$3.20|  
 |2|Belt|Utility|$11.00|  
 |3|Table|Furniture|$32.00|  
@@ -65,6 +67,7 @@ The output should be a single list with following columns:
 
 ***Product_Sales***  
 |sale_id|product_id|customer_id|quantity|  
++-------+----------+-----------+--------+
 |1|3|101|4|  
 |2|4|101|16|  
 |3|3|103|1|  
