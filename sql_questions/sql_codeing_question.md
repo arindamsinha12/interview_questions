@@ -37,3 +37,67 @@ SELECT CASE WHEN position = (SELECT MAX(position) FROM students) AND position % 
 FROM students
 ORDER BY position;
 ```
+
+#### Q2)
+
+From the tables below, list the customers who didn't buy a product and products that did not sell at all.  
+The output should be a single list with following columns:  
+- The string *customer* or *product* as the case may be  
+- The customer id or product id  
+- The customer name of product name
+
+**Tables:**  
+*Customer*  
+|customer_id|customer_name|  
+|101|Robert|  
+|102|James|  
+|103|Amy|  
+|104|Shyam|  
+|105|Moon|
+
+*Products*  
+|product_id|product_name|category|price|  
+|1|Box|Packaging|$3.20|  
+|2|Belt|Utility|$11.00|  
+|3|Table|Furniture|$32.00|  
+|4|Chair|Furniture|$16.00|  
+|5|Lamp|Utility|$19.00|
+
+*Product_Sales*  
+|sale_id|product_id|customer_id|quantity|  
+|1|3|101|4|  
+|2|4|101|16|  
+|3|3|103|1|  
+|4|4|103|4|  
+|5|5|103|2|  
+|6|5|104|1|
+
+```
+SELECT 'customer', customer_id, customer_name
+FROM customer c
+LEFT JOIN product_sales p
+USING (customer_id)
+WHERE p.customer_id is NULL
+UNION
+SELECT 'product', product_id, product_name
+FROM products pr
+LEFT JOIN product_sales p
+USING (product_id)
+WHERE p.product_id is NULL;
+```
+
+#### Q3)
+
+The sales manager wants to know the categories and average prices for categories in which products were sold. Find the same from the above three tables *Customer*, *Products*, and *Product_Sales*.
+
+```
+SELECT category, avg(price)
+FROM products
+WHERE category in (SELECT pr.category
+                   FROM products pr
+                   JOIN product_sales p
+                   using (product_id))
+GROUP BY category;
+```
+
+*Note: This is one of those slightly tricky questions as I mention in [Coding interview Tips](https://github.com/arindamsinha12/interview_questions/blob/main/coding_interview_tips.md). You do not need the ***Customer*** table at all, nor do you need to output any columns from ***Product_Sales****
