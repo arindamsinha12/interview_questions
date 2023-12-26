@@ -8,7 +8,7 @@ My strong suggestion is that anyone using this should try to solve the questions
 
 #### Q1)
 
-A teacher wants to shuffle their students in such a way, that each student in an odd numbered position moves back one seat and each in an even numbered position moves forward one seat. If the last student is in an odd numbered position, leave that unchanged. Based on the same table **students** below, write and SQL to do the same.
+A teacher wants to shuffle their students in such a way, that each student in an odd numbered position moves back one seat and each in an even numbered position moves forward one seat. If the last student is in an odd numbered position, leave that unchanged. Based on the table **students** below, write and SQL to do the same.
 
 **Table** ***students***:  
 |Position|Name|  
