@@ -67,7 +67,7 @@ The output should be a single list with following columns:
 
 ***Product_Sales***  
 |sale_id|product_id|customer_id|quantity|  
-+-------+----------+-----------+--------+
++-------+----------+-----------+--------+  
 |1|3|101|4|  
 |2|4|101|16|  
 |3|3|103|1|  
