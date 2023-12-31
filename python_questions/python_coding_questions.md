@@ -305,3 +305,20 @@ second_lowest = sorted(set([x[1] for x in records]))[1]
 students = sorted([g[0] for g in records if g[1] == second_lowest])
 prt = [print(name) for name in students]
 ```
+
+### Q15)
+
+You are given a string with words separated by variable number of spaces. Reverse the order of words in the string, preserving the variable number of spaces in the original order.
+
+Input: "this   is  how it  is and   needs to  be reversed"
+Output: 'reversed   be  to needs  and is   it how  is this'
+
+```
+import re
+strg = "this   is  how it  is and   needs to  be reversed"
+strg_split = re.split('(\s+)', strg)
+blk_lst = [x for x in strg_split if x.startswith(' ')] + [' ']
+non_blk_lst = [x for x in strg_split if not x.startswith(' ')][::-1]
+rev_strg = ''.join([elem[x] for x in range(len(non_blk_lst)) for elem in [non_blk_lst, blk_lst]][:-1])
+print(rev_strg)
+```
