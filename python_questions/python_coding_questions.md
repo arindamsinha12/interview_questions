@@ -310,7 +310,7 @@ prt = [print(name) for name in students]
 
 You are given a string with words separated by variable number of spaces. Reverse the order of words in the string, preserving the variable number of spaces in the original order.
 
-Input: "this   is  how it  is and   needs to  be reversed"
+Input: "this   is  how it  is and   needs to  be reversed"  
 Output: 'reversed   be  to needs  and is   it how  is this'
 
 ```
