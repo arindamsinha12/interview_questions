@@ -227,7 +227,7 @@ print("By length:", max(words, key=len))
 
 ### Q10)
 
-Find the maximum value of in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.  
+Find the maximum value in a dictionary (as a tuple (key, value)) (a) by key, (b) by max value length, and (c) by value.  
 dict1 = {'one': 'fifteen', 'two': 'sixteen', 'five': 'eleven', 'three': 'twelve', 'four': 'thirteen'}
 
 ```
