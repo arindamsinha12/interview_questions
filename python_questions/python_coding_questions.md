@@ -299,7 +299,7 @@ n = 4
 
 ### Q14)
 
-From the list of list of students and their grades, print the names of students with the second lowest grade.  
+From the list of list of students and their grades, print the names of students with the second lowest grade, in aphabetical order.  
 records = \[\['jane', 27.1], \['barry', 30], \['hogan', 30.8], \['sara', 30], \['larry', 31]]
 
 ```
