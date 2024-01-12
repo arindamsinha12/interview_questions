@@ -216,12 +216,12 @@ print(word_count)
 
 ### Q9)
 
-Find the maximum value in a list in (a) aplhabetical order and (b) word length.  
+Find the maximum value in a list in (a) alphabetical order and (b) word length.  
 words = \['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
 
 ```
 words = ['This', 'is', 'a', 'test', 'of', 'a', 'string', 'test', 'a', 'word', 'count']
-print("ASCII order:", max(words))
+print("Alphabetical order:", max(words))
 print("By length:", max(words, key=len))
 ```
 
