@@ -248,6 +248,9 @@ Find the common characters between two strings 'broad' and 'abracadabra' in (a) 
 ```
 In any order:
 "".join(set('broad') & set('abracadabra'))
+
+In order in which they appear in 'abracadabra':
+"".join(sorted(set('broad') & set('abracadabra'), key='abracadabra'.index))
 ```
 
 ### Q12)
