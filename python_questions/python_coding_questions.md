@@ -140,7 +140,7 @@ print(get_value(path_list, emp_dict))
 
 #### Q4)
 
-Insert the first string in the middle of the second string.  
+Insert the second string in the middle of the first string.  
 first_string = "Something"  
 second_string = "great"
 
