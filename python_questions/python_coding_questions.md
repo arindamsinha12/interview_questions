@@ -200,8 +200,12 @@ dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
 dict1 = {'two': 3, 'one': 5, 'three': 2, 'four': 4}
 
 print("By key:", dict(sorted(dict1.items())))
+
 print("By value:", dict(sorted(dict1.items(), key=lambda i: i[1])))
+
 print("By key length:", dict(sorted(dict1.items(), key=lambda i: len(i[0]))))
+# or
+print("By key length:", dict(sorted(dict1.items(), key=len)))
 ```
 
 ### Q8)
